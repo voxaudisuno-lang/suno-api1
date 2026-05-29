@@ -10,6 +10,8 @@ const nextConfig = {
   experimental: {
     serverMinification: false, // the server minification unfortunately breaks the selector class names
   },
+  // Nurodome sistemai nepakuoti šių probleminių bibliotekų, kad išvengtume TypeError:
+  serverExternalPackages: ['pino', 'swagger-ui-react', 'electron', '@playwright/browser-chromium', 'chromium-bidi'],
 };  
 
 export default nextConfig;
